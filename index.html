@@ -20,9 +20,9 @@
                 <div id="unity-progress-bar-full"></div>
             </div>
         </div>
-        <div id="unity-footer">
+        <!--<div id="unity-footer">
             <div id="unity-fullscreen-button"></div>
-        </div>
+        </div>-->
     </div>
   <script>
     var buildUrl = "Build";
@@ -76,17 +76,17 @@
 
     function SetScreen()
     {
-        canvasContainer.style.height = (window.innerHeight - 50) + "px";
-        canvasContainer.style.width = ((window.innerHeight - 50) * 7 / 13) + "px";
+        canvasContainer.style.height = (window.innerHeight - 10) + "px";
+        canvasContainer.style.width = ((window.innerHeight - 10) * 7 / 13) + "px";
     }
 
       setInterval(SetScreen, 10);
 
-      fullscreenButton.onclick = () => {
-          // console.log("Enter full screen");
-          canvasContainer.requestFullscreen();
-          // isFullScreen = true;
-      }
+      //fullscreenButton.onclick = () => {
+      //    // console.log("Enter full screen");
+      //    canvasContainer.requestFullscreen();
+      //    // isFullScreen = true;
+      //}
   </script>
 </body>
 
